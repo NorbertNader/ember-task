@@ -55,3 +55,9 @@ You do not need to include any of the other directories in your submission.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Solution remarks
+
+Almost all tests passed beside 'it returns to full size after clicking the small box'.
+It won't pass because of the transition, the assertion happens right after the click, so we would either have to timeout or - what I personally think would be a better solution - disable transitions in the test environment.
+
