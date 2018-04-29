@@ -1,0 +1,26 @@
+nav{
+  & ul{
+    max-width:$portrait-tablet;
+    margin: 2em auto;
+    display:flex;
+    justify-content: space-around;
+    & a.btn{
+      width: 200px;
+    }
+  }
+    @media (max-width: $portrait-tablet) {
+      ul {
+        width:100%;
+        flex-direction: column;
+        a.btn {
+          margin-top: 1em;
+        }
+      }
+    }
+}
+
+.panel{
+  max-width:$portrait-tablet;
+  margin: 0 auto;
+  margin-bottom: 300px;
+}

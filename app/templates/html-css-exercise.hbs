@@ -1,0 +1,52 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Ember Exercises</strong>
+    </div>
+    <div class="panel-body" id="animations-exercise">
+        <h2>Instructions:</h2>
+        <p>Modify the existing <code>shrinking-box</code> component to meet the following criteria:</p>
+        <ol>
+            <li>
+                Update the box to be 360px wide and 360px tall, and a background color of rgb(200, 200, 200).
+            </li>
+            <li>
+                When the box is clicked, toggle the component's <code>isSmall</code> property between true and false.
+            </li>
+            <li>
+                When the component's <code>isSmall</code> property is true, use the <code>is-small</code> class and CSS properties to change the size to 200px wide and 200px tall, the background to rgb(12, 89, 100), and font color to white.
+            </li>
+            <li>
+                Use CSS transitions to transition these property changes over 500ms.
+            </li>
+            <li>
+                Update <code>shrinking-box.hbs</code> to render the <code>smallMessage</code> property if the component's <code>isSmall</code> property is true.
+            </li>
+            <li>
+                Update <code>shrinking-box.hbs</code> to render the <code>bigMessage</code> property if the component's <code>isSmall</code> property is false.
+            </li>
+            <li>
+                Use flexbox properties to center the messages both vertically and horizontally.
+            </li>
+        </ol>
+        <h2>Results:</h2>
+        <div>
+            <!--Renders the component for this exercise-->
+            {{shrinking-box bigMessage="I'm big!" smallMessage="I'm small!"}}
+        </div>
+        <h2>Notes:</h2>
+        <p>
+            Refer to <a target="_blank" href="http://emberjs.com/api/classes/Ember.Component.html">Ember component
+            documentation</a> as necessary.
+        </p>
+        <p>
+            Visit <a target="_blank" href="http://localhost:4200/tests">localhost:4200/tests</a> to view test results.
+        </p>
+        <p>To complete this task, you will needy to modify the following files:
+        <ul>
+            <li><code>components/shrinking-box.js</code></li>
+            <li><code>templates/components/shrinking-box.hbs</code></li>
+            <li><code>styles/components/shrinking-box.scss</code></li>
+        </ul>
+        </p>
+    </div>
+</div>

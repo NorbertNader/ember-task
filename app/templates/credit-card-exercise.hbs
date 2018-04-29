@@ -1,0 +1,40 @@
+<div class="panel panel-default" id="credit-cards-exercise">
+    <div class="panel-heading">
+        <strong>Ember Component Exercise</strong>
+    </div>
+    <div class="panel-body">
+        <h2>Instructions:</h2>
+        <p>
+            Modify the existing <code>credit-card</code> component to meet the following criteria:
+        </p>
+        <ol>
+            <li>Update the <code>isExpired</code> function of the <code>credit-card.js</code> component to return <code>true</code> if the card is expired.</li>
+            <li>Use CSS to update the border color of the card to be red if the card is expired, and green otherwise.</li>
+        </ol>
+        <h2>Results:</h2>
+        <div class="credit-cards-container text-center">
+            {{#each model as |card|}}
+                {{credit-card card=card}}
+            {{/each}}
+        </div>
+        <h2>Notes:</h2>
+        <p>Refer to javascript date documentation as necessary:
+            <a target="_blank" href="https://www.w3schools.com/jsref/jsref_obj_date.asp">
+                https://www.w3schools.com/jsref/jsref_obj_date.asp
+            </a>
+        </p>
+        <p>
+            Refer to <a target="_blank" href="http://emberjs.com/api/classes/Ember.Component.html">Ember component
+            documentation</a> as necessary.
+        </p>
+        <p>
+            Visit <a target="_blank" href="http://localhost:4200/tests">localhost:4200/tests</a> to view test results.
+        </p>
+        <p>To complete this task, you will needy to modify the following files:
+        <ul>
+            <li><code>components/credit-card.js</code></li>
+            <li><code>styles/components/credit-card.scss</code></li>
+        </ul>
+        </p>
+    </div>
+</div>

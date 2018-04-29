@@ -1,0 +1,26 @@
+.geometric-sequence{
+  border: 1px solid $component-border-color;
+  padding:1em;
+  &-controls{
+    display:flex;
+    justify-content:flex-end;
+  }
+  &-list{
+    border: 1px solid $component-border-color;
+    display:flex;
+    flex-flow: row wrap;
+    &-item{
+      font-size:1.25em;
+      background: darkslateblue;
+      margin: .5em;
+      color: white;
+      width: 3.25em;
+      height: 3.25em;
+      border-radius: 50%;
+      font-weight: 600;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

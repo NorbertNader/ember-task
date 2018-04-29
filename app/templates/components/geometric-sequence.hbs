@@ -1,0 +1,10 @@
+
+<ul class="list-unstyled geometric-sequence-list" id="sequence-list">
+    {{#each reverseSequence as |number|}}
+        <li class="geometric-sequence-list-item">{{number}} </li>
+    {{/each}}
+</ul>
+
+<div class="geometric-sequence-controls">
+    <button class="btn btn-success geometric-sequence-update-button" {{action 'updateSequence'}}>Update Sequence</button>
+</div>
