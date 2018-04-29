@@ -23,6 +23,7 @@ export default Ember.Component.extend({
     var reverse = sequence;
 
     //reverse the array here
+    reverse.reverse();
 
     return reverse;
   }),
@@ -30,9 +31,15 @@ export default Ember.Component.extend({
   actions:{
     updateSequence: function(){
       var sequence = this.get("geometricSequence");
-      alert("Trying to update sequence (You can remove this alert)");
-
+      sequence.reverse();
       //Modify the sequence here
+      sequence.pushObject(sequence[sequence.length-1]*2);
+      if (sequence.length > 10) {
+        sequence.shiftObject();
+      }
+      if (sequence[sequence.length-1] > 32768) {
+        this.set("geometricSequence", [1, 2, 4]);
+      }
     }
   }
 });
